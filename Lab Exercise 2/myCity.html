@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>myCity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        #city {
+            font-size: 50px;
+            color: blue;
+            margin-top: 20px;
+        }
+
+        .landmark1 {
+            font-size: 24px;
+            margin: 20px;
+            color: blueviolet;
+        }
+        .landmark2 {
+            font-size: 24px;
+            margin: 20px;
+            color: rgb(7, 175, 187);
+        }
+        .landmark3 {
+            font-size: 24px;
+            margin: 20px;
+            color: rgb(46, 137, 240);
+        }
+        .landmark4 {
+            font-size: 24px;
+            margin: 20px;
+            color: rgb(129, 8, 93);
+        }
+
+        #college {
+            font-size: 28px;
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        #scrolling-text {
+            font-size: 18px;
+            margin: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scrolling 15s linear infinite;
+        }
+
+        @keyframes scrolling {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="city">CHANDANNAGAR</h1>
+
+    <div class="landmark1">Sacred Heart Church</div>
+    <div class="landmark2">Chandernagore Strand</div>
+    <div class="landmark3">Museum</div>
+    <div class="landmark4">The Patal Bari</div>
+
+    <div id="college">CHANDERNAGORE COLLEGE</div>
+    <div id="scrolling-text">Apart from all the above mentioned landmaks Chandernagore is famous for it's Sweets & Jagadhatri Puja.</div>
+</body>
+</html>
