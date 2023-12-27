@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles_FormValidation.css">
+    <script src="form-validation.js"></script>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="studentreg.php" method="post" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="Phone"><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="Gender">
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="o">Other</option>
+        </select><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="Dob"><br><br>
+
+        <label for="department">Department:</label>
+        <select id="department" name="Department">
+            <option value="computer_science">Computer Science</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="physics">Physics</option>
+            <option value="history">History</option>
+            <option value="geography">Geography</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
