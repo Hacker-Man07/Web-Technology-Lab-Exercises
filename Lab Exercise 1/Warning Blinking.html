@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning Blinking</title>
+</head>
+<style>
+        #blinking {
+            color: white;
+            font-size: 80px;
+        }
+</style>
+<body bgcolor="red">
+
+    <p align="center"><span id="blinking"> <b>WARNING!!</b> </span></p>
+
+        <script>
+            var blinking = document.getElementById("blinking");
+            setInterval(function(){
+                if(blinking.style.opacity==0){
+                    blinking.style.opacity=1;
+                }
+                else{
+                    blinking.style.opacity=0;
+                }
+            },1000);
+        </script>
+        <br><br>
+        <h2>
+            <marquee behavior="Scrolling" direction="right">Read the Message</marquee>
+        </h2>
+    
+</body>
+</html>
