@@ -1,0 +1,49 @@
+styles.css
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f9f9;
+  }
+  
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #1a77b4;
+
+  }
+  
+  form {
+    border: 0.1px solid #000;
+    background-color: #fff;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  label {
+    font-weight: bold;  
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+  }
+  
+  input[type="submit"] {
+    background-color: #1a77b4;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+  }
+  
+  input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #0d57a8;
+  }
